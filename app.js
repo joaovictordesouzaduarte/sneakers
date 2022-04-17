@@ -87,17 +87,36 @@ const currentProductColors = document.querySelectorAll(".color");
 const currentProductSize = document.querySelectorAll(".size");
 
 
-  menuItems.forEach((item, index) => {
+menuItems.forEach((item, index) => {
     item.addEventListener("click", () => {
         //change the current slide
         wrapper.style.transform = `translateX(${-100 * index}vw)`
 
-        //change the choosen product
+        // //change the choosen product
         choosenProduct = products[index]
 
-        //change texts of current product
+        // //change texts of current product
         currentProductTitle.textContent = choosenProduct.title;
         currentProductPrice.textContent = "$" + choosenProduct.price;
         currentProductImg.src = choosenProduct.colors[0].img;
+        //assign new color
+        currentProductColors.forEach((color, index) => {
+          color.style.backgroundColor = choosenProduct.colors[index].code;
+        })
     })
+})
+currentProductColors.forEach((color, index) => {
+  color.addEventListener("click", () => {
+    currentProductImg.src = choosenProduct.colors[index].img;
+  })
+})
+currentProductSize.forEach((size, index) => {
+  size.addEventListener('click', () => {
+    currentProductSize.forEach((size) => {
+      size.style.backgroundColor = "white"
+      size.style.color = "black"
+    })
+    size.style.backgroundColor = "black"
+    size.style.color = "white"
+  })
 })
