@@ -120,3 +120,14 @@ currentProductSize.forEach((size, index) => {
     size.style.color = "white"
   })
 })
+const productButton = document.querySelector(".productButton");
+const payment = document.querySelector(".payment");
+const closeButton = document.querySelector(".close");
+productButton.addEventListener('click', () => {
+  payment.style.display = "flex"
+})
+closeButton.addEventListener('click', () => {
+  payment.style.display = "none"
+})
+// const currentProductTitle = document.querySelector(".productTitle");
+// const currentProductPrice = document.querySelector(".productPrice");
