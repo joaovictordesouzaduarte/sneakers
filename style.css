@@ -313,3 +313,189 @@ label{
   justify-content: center;
   cursor: pointer;
 }
+.gallery{
+  padding: 50px;
+  display: flex;
+}
+.galleryItem{
+  flex: 1;
+  padding: 50px;
+}
+.galleryImg{
+  width: 100%;
+}
+.newSeason{
+  display: flex;
+}
+.nsItem{
+  flex: 1;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+}
+.nsImg{
+  width: 100%;
+  height: 700px;
+}
+.nsButton{
+  height: 50px;
+  text-transform: uppercase;
+  cursor: pointer;
+  top: 50%;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1em;
+  color: #fff;
+  border-radius: 10px;
+  background-color: black;
+  background-size: 200% auto;
+  transition: 0.5s;
+  border: none;
+  
+}
+footer{
+  display: flex;
+}
+.footerLeft{
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+.fMenuTitle{
+  font-size: 16px;
+}
+.fList{
+  padding: 0;
+  list-style: none;
+}
+.fListItem{
+  margin-bottom: 10px;
+  color: gray;
+  cursor: pointer;
+}
+.footerRight{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+}
+.fButton{
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border-radius: 10%;
+  cursor: pointer;
+  border: none;
+}
+.fIcons{
+  display: flex;
+}
+.fIcon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.fCopyRight{
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 40px;
+}
+@media screen and (max-width:480px) {
+  nav{
+    padding: 20px;
+  }
+  .search{
+    display: none;
+  }
+  .navBottom{
+    flex-wrap: wrap;
+  }
+  .menuItem{
+    font-weight: 700;
+    margin: 20px;
+    font-size: 20px ;
+  }
+  .slider{
+    clip-path: none;
+  }
+  .sliderImg{
+    width: 90% ;
+  }
+  .sliderBg{
+    width: 100%;
+    height: 100%;
+  }
+  .sliderTitle{
+    display: none;
+  }
+  .sliderPrice{
+    top: unset;
+    bottom: -50;
+    left: 0;
+    background-color: lightgrey;
+  }
+  .buyButton{
+    right: 0;
+    left: 0;
+    display: none;
+  }
+  .features{
+    flex-direction: column;
+  }
+  .product{
+    clip-path: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .productImg{
+    width: 80%;
+  }
+  .productDetails{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  .productTitle{
+    font-size: 50px;
+    margin: 0;
+  }
+  .gallery{
+    display: none;
+  }
+  .newSeason{
+    flex-direction: column;
+  }
+  .nsItem:nth-child(2){
+    padding: 50px;
+  }
+  footer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerLeft{
+    padding: 20px;
+    width: 90%;
+  }
+  .footerRight{
+    padding: 20px;
+    width: 90%;
+    align-items: center;
+    background-color: whitesmoke;
+  }
+  .payment{
+    width: 90%;
+    padding: 20px;
+  }
+}
+
